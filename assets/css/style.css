@@ -1,0 +1,190 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  --easeIn: cubic-bezier(0.9, 0.025, 0.75, 0.625);
+  --easeOut: cubic-bezier(0.25, 0.375, 0.1, 0.975);
+  --easeInOut: cubic-bezier(0.66, 0.025, 0.33, 0.975);
+  --instant: 85ms;
+  --short: 250ms;
+  --medium: 420ms;
+  --semilong: 500ms;
+  --long: 800ms;
+}
+
+* { box-sizing: border-box; }
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+
+/*.app {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+}
+*/
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+
+/*NAVBAR*/
+
+.navBar {
+  width: 100%;
+/*  height: 80px;
+*/background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  margin-bottom: 80px;
+
+}
+
+.navIcon {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.navItem {
+  font-size: 16;
+  padding: 14.5px 16px 14.5px 16px;
+  margin: 0;
+
+}
+
+.navSearch {
+  font-size: 16px;
+  color: #767676;
+  font-weight: 400;
+  background-color: #efefef;
+  padding: 14px 16px 14px;
+  border-radius: 24px;
+  flex-grow: 2;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+
+.bottom-right {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-right-icon {
+  background: #ffffff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  padding: 14px;
+  border-radius: 2000px;
+  margin: 8px;
+
+}
+
+/*GRID*/
+
+.grid {
+  width: 1496px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 88px;
+}
+
+.grid:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.grid-col {
+  width: 236px;
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  /* margin-right: 2%; */
+}
+
+.grid-col--6 { 
+  margin-right: 0;
+}
+
+
+.grid-item {
+  background: #efefef;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.grid-item--a { 
+  height:  236px; 
+}
+
+.grid-item--b { 
+  height: 394px; 
+}
+
+.grid-item--c { 
+  height: 360px; 
+}
+
+
+/*CONFETTI*/
+
+.confetti {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+
+
+}
+
+
+
+
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 450;
+  text-align: center;
+}
+
+h3 {
+  font-size: 16px;
+  text-decoration-line: underline;
+  font-weight: 350;
+}
+
