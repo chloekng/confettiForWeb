@@ -63,7 +63,7 @@ $(document).ready(function() {
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'https://assets8.lottiefiles.com/private_files/lf30_47o1d4ot.json' // the path to the animation json
+    path: 'https://assets1.lottiefiles.com/private_files/lf30_mcnw8vrl.json' // the path to the animation json
   });
 
 
